@@ -1,0 +1,111 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+#title {
+    color: white;
+    background-color: #571770;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.content {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.content #main-header {
+    margin: 40px 0;
+    font-size: 1.2em;
+}
+
+form {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+form input[type=text] {
+    flex-basis: 80%;
+    padding: 10px;
+    width: 500px;
+    font-size: 1.5em;
+    border: 0;
+    background-color: #f8f8f8;
+}
+
+form input[type=text]::selection {
+    border-bottom: #571770;
+}
+
+form button {
+    flex-basis: 5%;
+    padding: 17px;
+    cursor: pointer;
+    border: 0;
+    color: #ffffff;
+    background-color: #571770;
+}
+
+form button:hover {
+    background-color: #9C5CB5;
+    transition: ease-in-out 375ms;
+}
+
+.store-list {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.store-list header {
+    flex-basis: 100%;
+    border-bottom: 1px solid #571770;
+    margin-bottom: 10px;
+    text-align: start;
+    color: #5e5e5e;
+}
+
+.store-list-item {
+    flex-basis: 19.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    min-height: 150px;
+    border: 1px solid #eaeaea;
+}
+
+.store-list-item img {
+    flex-basis: 100%;
+    margin: 0 18%;
+    margin-bottom: 10px !important;
+}
+
+.store-list-item header {
+    display: none;
+}
+
+.store-list-item a {
+    flex-basis: 100%;
+    text-decoration: none;
+    padding: 8px 0;
+    border: 1px solid #571770;
+}
+
+.store-list-item a:hover {
+    background-color: #571770;
+    color: #ffffff;
+    transition: 500ms;
+}

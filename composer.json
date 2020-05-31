@@ -1,0 +1,25 @@
+{
+  "name": "cometwp/api-lomadee",
+  "description": "Busca automática de lojas na Lomadee",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Augusto Dias",
+      "email": "augustodias@cometwp.com.br",
+      "role": "Developer",
+      "homepage": "https://cometwp.com.br"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Config.php"
+    ]
+  }
+}
