@@ -16,7 +16,20 @@ define("CONF_SITE_LANG","pt-BR");
 define("CONF_SITE_DOMAIN","eguadocupom.com.br");
 
 
+/**
+ * DATE
+ */
+define("CONF_DATE_BR","d/m/Y H:i:s");
+define("CONF_DATE_APP","Y-m-d H:i:s");
 
+/**
+ * SESSIONS
+ */
+define("CONF_SES_PATH", __DIR__ . "/../../storage/sessions/");
+
+/**
+ * LOMADEE KEYS
+ */
 define('LMD_API_TOKEN', '1586524487910acc5cf70');
 define('LMD_SOURCE_ID', '36379559');
 
