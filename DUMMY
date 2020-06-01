@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Meu projeto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/7ca284b14a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shared/styles/style.css"
+</head>
+<body>
+<section id="title">
+    <header><h2>Égua do Cupom</h2></header>
+</section>
+
+<section class="content">
+    <section>
+        <header id="main-header"><h2>São mais de 190 lojas cheias de promoções!</h2></header>
+    </section>
+    <div>
+        <form action="livesearch.php">
+            <input type="text" id="store" name="store" placeholder="Encontre mais rápido aqui...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+    <section class="store-list">
+        <header><h2>Todas as lojas</h2></header>
+        <?php  foreach($response->stores as $store) { ?>
+            <article class="store-list-item">
+                <img src="<?= $store->thumbnail ?>">
+                <header><h3><?= $store->name ;?></h3></header>
+                <a href="<?= $store->link ?>" target="_blank">Ver Ofertas</a>
+            </article>
+        <?php } ?>
+    </section>
+</section>
+
+</body>
+</html>S

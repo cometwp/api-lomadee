@@ -19,7 +19,12 @@
       "Source\\": "source/"
     },
     "files": [
-      "source/Config.php"
+      "source/Support/Config.php"
     ]
+  },
+  "require": {
+    "php" : "^7.4",
+    "ext-pdo" : "^7.4",
+    "coffeecode/router": "^1.0.7"
   }
 }
